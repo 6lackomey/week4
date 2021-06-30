@@ -1,0 +1,30 @@
+.topnav {
+    color: #000;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .topnav a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  .logo{
+      float: left;
+      height: 10%;
+      width: 20%;
+      top: auto;
+  }
+  .first{
+      background-image: url(images/52ce1b5e0dd79704fbbcf8a8fbd12fbc.jpg);
+      height: 100%;
+      position: relative;
+      
+      
+  }
+  
+  
+  
+  
