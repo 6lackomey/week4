@@ -50,166 +50,86 @@
       <div class="container-fluid menu">
         <div class="col-md-25">
           <div class="row">
-              <h2>Menu</h2>
-              <div class="card text-center" id="menuCard">
-                <div class="card-header">
-                  <ul class="nav nav-tabs card-header-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pizzas</a>
-                    </li>
-                  </ul>
-                </div> 
-            </div>
             <div class="container p-5">
                 <div class="row d-flex justify-content-center my-5">
-                    <div class="col-lg-10  px-5 pt-5 form-section">
-    
-                        <div class="feedback text-center text-capitalize">
-    
-                        </div>
-                        <h4 class="text-center"> Make your order</h4>
-                        <form name="pizzaForm" action="" id='pizzaForm' method="get">
-                            <div class="form-row">
-                                <div class="col-lg-12">
-                                    <label for="size">Enter Pizza Size</label>
-                                    <select name="size" id="pizzaSize" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example">
-                                      <option selected></option>
-                                      <option value="large">Large</option>
-                                      <option value="medium">Medium</option>
-                                      <option value="small">small</option>
-                                  </select>
-                                </div>
-                            </div>
-    
-                            <div class="form-row">
-                                <div class="col-lg-12">
-                                    <label for="crust">Enter Crust Type</label>
-                                    <select name="crust" id="pizzaCrust" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example">
-                                    <option selected></option>
-                                    <option value="crispy">Crispy</option>
-                                    <option value="stuffed">Stuffed</option>
-                                    <option value="glutten Free">Glutten Free</option>
-                                </select>
-                                </div>
-                            </div>
-    
-    
-                            <div class="form-row">
-                                <div class="col-lg-12">
-                                    <label for="crust">Enter Toppings</label>
-                                    <select name="toppings" id="pizzaToppings" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example">
-                                  <option selected></option>
-                                  <option value="onions">Onions</option>
-                                  <option value="tomatoes">Tomatoes</option>
-                                  <option value="mushrooms">Mushrooms</option>
-                                  <option value="olives">Olives</option>
-                                  <option value="bacon">Bacon</option>
-                                  <option value="sausage">Sausage</option>
-                                  <option value="chicken">Chicken</option>
-                                  <option value="beef">Beef</option>
-        
-                                  
-                              </select>
-                                </div>
-                            </div>
-    
-                            <div class="form-row">
-                                <div class="col-lg-12">
-                                    <label for="crust">Enter No Of Pizzas</label>
-                                    <input type="number" name="numPizzas" id="numPizzas" placeholder="" class="form-control my-3 p-4">
-                                </div>
-                            </div>
-    
-                            <div class="form-row">
-                                <div class="col-lg-12">
-                                    <label for="crust">Enter Delivery Option</label>
-                                    <select name="delivery" id="delivery" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example">
-                              <option selected></option>
-                              <option value="no delivery">No Delivery</option>
-                              <option value="yes delivery">Yes Delivery</option>
-                             
-                          </select>
-                                </div>
-                            </div>
-    
-                            <div class="form-row">
-                                <div class="col-lg-12 mb-5">
-                                    <button type="submit" id="btnSubmit" class=" btn btn-lg btn1">SUBMIT</button>
-    
-    
-                                </div>
-    
-    
-                            </div>
-                    </div>
-    
-                    </form>
-    
-    
-    
-    
-                    <div class="row">
-    
-                    </div>
-    
-                    <div class="row" id="pizzas-list">
-    
-                    </div>
-                    <div class="row" id="pizzas-total">
-    
-                        <div class="col-lg-8 col-md-8 text-center">
-                            <h1> Your Bill Is : Ksh<span class="total-price"></span></h1>
-                        </div>
-    
-                    </div>
-    
-    
+                <div class="col-lg-10 px-5 pt-5 form-section">
+                <div class="feedback text-center text-capitalize">
                 </div>
-            </div>
-            </section>
-    
-            <div class="third-row">
-                <div class="flavor">
-                    <p>FLAVOUR MENU</p>
-                    <p>TOPPINGS AND HAND CHIPS</p>
+                <h4 class="text-center"> Make your order</h4>
+                <form name="pizzaForm" action="" id='pizzaForm' method="get">
+                <div class="form-row">
+                <div class="col-lg-12">
+                <label for="size">Enter Pizza Size</label>
+                <select name="size" id="pizzaSize" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example">
+                <option selected></option>
+                <option value="large">Large</option>
+                <option value="medium">Medium</option>
+                <option value="small">small</option>
+                </select>
                 </div>
-                <div class="breakfast">
-                    <p>BREAKFAST MENU</p>
-                    <P>ROLLS</P>
                 </div>
-            </div>
-
-<div class="container-fluid billing">
-                            <h2>Billing and Pricing</h2>
-                                <div class="card" id="orderDetails">
-                                    <div class="card-body">
-                                        <div class="col-sm-4">
-                                            <div class="summary">
-                                                <div id="price-breakdown">
-                                                    <div class="summary-items">
-                                                    <p class="space"><span id="size-price"></span></p>
-                                                    </div>
-                                                    <div class="summary-items">
-                                                    <p class="space"><span id="toppings-price"></span></p>
-                                                    </div>
-                                                    <div class="summary-items">
-                                                    <p class="space"><span id="crust-price"></span></p>
-                                                    </div>
-                                                    <div class="summary-items">
-                                                    <p class="space"><span id="delivery-price"></span></p>
-                                                    </div>
-                                                </div>
-                                                    <div class="summary-items total" id="total">
-                                                        <h5 class="sum-price" id="total-price"></h5>
-                                                    </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                        <div class="card-footer">
-                                            <button onclick="submit()" id="checkOut" class="btn reserve-btn">CHECKOUT</button>
-                                        </div>
-                                </div>
-                        </div>
+                <div class="form-row">
+                <div class="col-lg-12">
+                <label for="crust">Enter Crust Type</label>
+                <select name="crust" id="pizzaCrust" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example">
+                <option selected></option>
+                <option value="crispy">Crispy</option>
+                <option value="stuffed">Stuffed</option>
+                <option value="glutten Free">Glutten Free</option>
+                </select>
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="col-lg-12">
+                <label for="crust">Enter Toppings</label>
+                <select name="toppings" id="pizzaToppings" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example">
+                <option selected></option>
+                <option value="onions">Onions</option>
+                <option value="tomatoes">Tomatoes</option>
+                <option value="mushrooms">Mushrooms</option>
+                <option value="olives">Olives</option>
+                <option value="bacon">Bacon</option>
+                <option value="sausage">Sausage</option>
+                <option value="chicken">Chicken</option>
+                <option value="beef">Beef</option>
+                </select>
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="col-lg-12">
+                <label for="crust">Enter No Of Pizzas</label>
+                <input type="number" name="numPizzas" id="numPizzas" placeholder="" class="form-control my-3 p-4">
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="col-lg-12">
+                <label for="crust">Enter Delivery Option</label>
+                <select name="delivery" id="delivery" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example">
+                <option selected></option>
+                <option value="no delivery">No Delivery</option>
+                <option value="yes delivery">Yes Delivery</option>
+                </select>
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="col-lg-12 mb-5">
+                <button type="submit" id="btnSubmit" class=" btn btn-lg btn1">SUBMIT</button>
+                </div>
+                </div>
+                </div>
+                </form>
+                <div class="row">
+                </div>
+                <div class="row" id="pizzas-list">
+                </div>
+                <div class="row" id="pizzas-total">
+                <div class="col-lg-8 col-md-8 text-center">
+                <h1> Your Bill Is : Ksh<span class="total-price"></span></h1>
+                </div>
+                </div>
+                </div>
+                </div>
+                </section>
     <div class="container about" id="about-us">
                     <h1>About Us.</h1>
                     
