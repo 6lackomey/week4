@@ -1,7 +1,7 @@
 #### {Pizza App}, {2021}
 
 #### By **{List of contributors}**
- [Dennis Collins](https://github.com/Byakuya007)
+ [mathew wahome](https://github.com/6lackomey/week4.git)
 
 
 ## Description
@@ -14,7 +14,7 @@
 {Used HTML ,CSS and Javascript to achieve the end goal ...also styled using bootstrap css}
 
 ## Support and contact details
-{Incase of any questions about the code feel free to contact me at my email, denniscollinsthumbi007@gmail.com.}
+{Incase of any questions about the code feel free to contact me at my email, wahomem99@gmail.com}
 
 ### License
 Copyright <2021> <mathew wahome>***
