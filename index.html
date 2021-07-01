@@ -3,29 +3,250 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>pizzle</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="/images/logo.png"type="img/jpg">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <title>NASTY PIZZA</title>
 </head>
 <body>
-    <body>
-
-        <header>
-            <nav>
-                <ul class="navigation">
-                    <li class="navigation__item"><a href="#new-york" class="navigation__link">home</a></li>
-                    <li class="navigation__item"><a href="#neapolitan" class="navigation__link">menu</a></li>
-                    <li class="navigation__item"><a href="#detroit" class="navigation__link">buy</a></li>
-                </ul>
-            </nav>
-            <div class="showcase">
-                <main>
-                    <h1>welcome to pizzle</h1>
-                    <a href="#przepisy" class="call_to_action">Sprawdź</a>
-                </main>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand logo"href="#"><img src="images/cart.jpg" alt="logo of nasty pizza" width="100%" ></a>
+        <span class="navbar-brand navbar-text"> <a href="#"></a> Nasty pizza.</span>
+        <div class="collapse navbar-collapse" id="collapse_target">
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#delivery">Delivery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contac-us">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid landing">
+        <img src="/images/ (1).png" alt="logo" id="logo"><br><br>
+        <h1>Nasty Pizza</h1>
+        <h1> In Pizza we crust!</h1>
+        <p>Why did the pizza start its own business?<br>
+            He wanted to make some dough.</p>
+        <div class="mouse-click"></div>
+        <a href="#about-us"><img src="/images/mouse_click.png" alt=" mouse_click" id="mouse-click"></a>
+      </div>
+      <div class="container-fluid menu">
+        <div class="col-md-25">
+          <div class="row">
+              <h2>Menu</h2>
+              <div class="card text-center" id="menuCard">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pizzas</a>
+                    </li>
+                  </ul>
+                </div> 
             </div>
-        </header>
-        
-    </body>
+            <div class="container p-5">
+                <div class="row d-flex justify-content-center my-5">
+                    <div class="col-lg-10  px-5 pt-5 form-section">
     
+                        <div class="feedback text-center text-capitalize">
+    
+                        </div>
+                        <h4 class="text-center"> Make your order</h4>
+                        <form name="pizzaForm" action="" id='pizzaForm' method="get">
+                            <div class="form-row">
+                                <div class="col-lg-12">
+                                    <label for="size">Enter Pizza Size</label>
+                                    <select name="size" id="pizzaSize" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example">
+                                      <option selected></option>
+                                      <option value="large">Large</option>
+                                      <option value="medium">Medium</option>
+                                      <option value="small">small</option>
+                                  </select>
+                                </div>
+                            </div>
+    
+                            <div class="form-row">
+                                <div class="col-lg-12">
+                                    <label for="crust">Enter Crust Type</label>
+                                    <select name="crust" id="pizzaCrust" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example">
+                                    <option selected></option>
+                                    <option value="crispy">Crispy</option>
+                                    <option value="stuffed">Stuffed</option>
+                                    <option value="glutten Free">Glutten Free</option>
+                                </select>
+                                </div>
+                            </div>
+    
+    
+                            <div class="form-row">
+                                <div class="col-lg-12">
+                                    <label for="crust">Enter Toppings</label>
+                                    <select name="toppings" id="pizzaToppings" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example">
+                                  <option selected></option>
+                                  <option value="onions">Onions</option>
+                                  <option value="tomatoes">Tomatoes</option>
+                                  <option value="mushrooms">Mushrooms</option>
+                                  <option value="olives">Olives</option>
+                                  <option value="bacon">Bacon</option>
+                                  <option value="sausage">Sausage</option>
+                                  <option value="chicken">Chicken</option>
+                                  <option value="beef">Beef</option>
+        
+                                  
+                              </select>
+                                </div>
+                            </div>
+    
+                            <div class="form-row">
+                                <div class="col-lg-12">
+                                    <label for="crust">Enter No Of Pizzas</label>
+                                    <input type="number" name="numPizzas" id="numPizzas" placeholder="" class="form-control my-3 p-4">
+                                </div>
+                            </div>
+    
+                            <div class="form-row">
+                                <div class="col-lg-12">
+                                    <label for="crust">Enter Delivery Option</label>
+                                    <select name="delivery" id="delivery" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example">
+                              <option selected></option>
+                              <option value="no delivery">No Delivery</option>
+                              <option value="yes delivery">Yes Delivery</option>
+                             
+                          </select>
+                                </div>
+                            </div>
+    
+                            <div class="form-row">
+                                <div class="col-lg-12 mb-5">
+                                    <button type="submit" id="btnSubmit" class=" btn btn-lg btn1">SUBMIT</button>
+    
+    
+                                </div>
+    
+    
+                            </div>
+                    </div>
+    
+                    </form>
+    
+    
+    
+    
+                    <div class="row">
+    
+                    </div>
+    
+                    <div class="row" id="pizzas-list">
+    
+                    </div>
+                    <div class="row" id="pizzas-total">
+    
+                        <div class="col-lg-8 col-md-8 text-center">
+                            <h1> Your Bill Is : Ksh<span class="total-price"></span></h1>
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+            </div>
+            </section>
+    
+            <div class="third-row">
+                <div class="flavor">
+                    <p>FLAVOUR MENU</p>
+                    <p>TOPPINGS AND HAND CHIPS</p>
+                </div>
+                <div class="breakfast">
+                    <p>BREAKFAST MENU</p>
+                    <P>ROLLS</P>
+                </div>
+            </div>
+
+<div class="container-fluid billing">
+                            <h2>Billing and Pricing</h2>
+                                <div class="card" id="orderDetails">
+                                    <div class="card-body">
+                                        <div class="col-sm-4">
+                                            <div class="summary">
+                                                <div id="price-breakdown">
+                                                    <div class="summary-items">
+                                                    <p class="space"><span id="size-price"></span></p>
+                                                    </div>
+                                                    <div class="summary-items">
+                                                    <p class="space"><span id="toppings-price"></span></p>
+                                                    </div>
+                                                    <div class="summary-items">
+                                                    <p class="space"><span id="crust-price"></span></p>
+                                                    </div>
+                                                    <div class="summary-items">
+                                                    <p class="space"><span id="delivery-price"></span></p>
+                                                    </div>
+                                                </div>
+                                                    <div class="summary-items total" id="total">
+                                                        <h5 class="sum-price" id="total-price"></h5>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="card-footer">
+                                            <button onclick="submit()" id="checkOut" class="btn reserve-btn">CHECKOUT</button>
+                                        </div>
+                                </div>
+                        </div>
+    <div class="container about" id="about-us">
+                    <h1>About Us.</h1>
+                    
+                    <p>The story behind Nasty Pizza is actualy a wired one <br> The group of owners are long time friends <br> and during one of their get togethers<br>  they decided to make a pizza just out of the blues and thought how they could make some really nasty pizzas for each other as jokes but those nasty pizzas were actualy great and decided to sell the excess to a neighbour <br> the neighbour really liked the pizza and requested for another affter a week and thats when thy saw the opprtunity and there and then their bussiness started.</p>
+                    <p> At the momment Nasty pizza sells to Nairobi and its environs and it is hopping to expand to other cities in the near future</p>
+        </div>
+    <div class="container-fluid contact">
+        <h2>CONTACT US</h2>
+        <form id="form34A" method="POST">
+        <div class="form-group form-inline">
+            <input type="text" class="form-control" placeholder = "Name...." name="MERGE1" id="MERGE1" size="25" value="">
+            <input type="email" class="form-control"  placeholder = "Email...." autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="8" id="comment" placeholder = "Your message here...."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary col-md-1">Send</button>
+        <div class="form">
+        </div>
+        </form>
+    </div>
+    <footer>
+        <img src="/images/twitter.png" alt="twitter">
+        <img src="/images/facebook.png" alt="facebook">
+        <img src="/images/g_plus.png" alt="g_plus">
+        <img src="/images/skype.png" alt="skype">
+        <img src="/images/stumble_upon.png" alt="stumble_upon">
+        <p>NASTY PIZZA</p>
+        <p id="date"></p>
+        <script>
+        const d = new Date();
+        document.getElementById("date").innerHTML = d.getFullYear();
+        </script>
+        <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"> </script>
+        <script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"e71bed4d6ae5a7c984dfe28b0","lid":"dbf7e27685","uniqueMethods":true}) })</script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    </footer>
 </body>
 </html>
